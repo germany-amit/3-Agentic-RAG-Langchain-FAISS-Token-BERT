@@ -12,9 +12,9 @@ from bert_score import BERTScorer
 # Set the page configuration for a wide layout
 st.set_page_config(page_title="GenAI MVP", page_icon="🤖", layout="wide")
 st.title("🧠 GenAI Open-Source Demo - Three Agents on PDF")
-uploaded_file = st.file_uploader("📄 Upload a text-only PDF file", type=["pdf"])
+
 # UI elements for file upload and user query
-uploaded_file = st.file_uploader("📄 Upload a PDF file", type=["pdf"])
+uploaded_file = st.file_uploader("📄 Upload a text only small PDF file", type=["pdf"])
 query = st.text_input("💬 Ask your question:")
 
 # ---- Load models with caching ----
